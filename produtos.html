@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brito´s - Produtos</title>
+  <link rel="stylesheet" href="./css/produtos.css">
+</head>
+<body>
+  <header>
+    <h1>Brito´s</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html" class="active">Produtos</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+    <button id="toggleCarrinho" class="btn-carrinho">🛒 Carrinho (<span id="quantidade">0</span>)</button>
+  </header>
+
+  <main>
+    <aside class="filtros">
+      <h2>Filtros</h2>
+      <div class="filtro">
+        <h3>Categorias</h3>
+        <a href="./Pages/camisa.html"><button>Camisas</button></a>
+        <a href="./Pages/calca.html"><button>Calças</button></a>
+        <a href="./Pages/vestido.html"><button>Vestidos</button></a>
+        <a href="./Pages/tenis.html"><button>Tênis</button></a>
+      </div>
+
+      <div class="filtro">
+        <h3>Tamanho</h3>
+        <button>P</button>
+        <button>M</button>
+        <button>G</button>
+        <button>GG</button>
+      </div>
+    </aside>
+
+    <section class="produtos">
+      <h2>Todos os Produtos</h2>
+      <div class="grid">
+        <div class="produto">
+          <img src="./assets/jaqueta.jpg" alt="Produto 1">
+          <h3>Camisa Básica</h3>
+          <p class="preco">59.90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="./assets/vestidofloral.png" alt="Produto 2">
+          <h3>Calça Jeans</h3>
+          <p class="preco">120.00</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="./assets/jaqueta.jpg" alt="Produto 3">
+          <h3>Vestido Floral</h3>
+          <p class="preco">89.90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="./assets/vestidofloral.png" alt="Produto 4">
+          <h3>Tênis Branco</h3>
+          <p class="preco">199.90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Carrinho lateral -->
+  <aside id="carrinho" class="carrinho">
+    <h2>Meu Carrinho</h2>
+    <ul id="listaCarrinho"></ul>
+    <div class="total">
+      <strong>Total: R$ <span id="total">0.00</span></strong>
+    </div>
+    <button id="fecharCarrinho" class="btn-fechar">Minimizar</button>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Brito´s - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="./scripts/carrinho.js"></script>
+</body>
+</html>
