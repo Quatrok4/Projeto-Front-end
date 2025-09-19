@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - Brito's</title>
   <link rel="stylesheet" href="./css/styleslogin.css">
+  <script src="./scripts/login.js" defer></script>
 </head>
 <body>
   <header>
@@ -18,8 +19,17 @@
         <input type="email" placeholder="E-mail" required>
         <input type="password" placeholder="Senha" required>
         <button type="submit">Entrar</button>
+        
       </form>
+      <button id="btnEsqueci" class="btn-esqueci">Esqueci minha senha</button>
       <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+      
+        <div id="modalSenha" class="modal-senha">
+          <div class="modal-content-senha">
+               <span id="fecharModal" class="fechar">&times;</span>
+                  <p id="mensagemSenha"></p>
+          </div>
+        </div>
     </div>
   </div>
 

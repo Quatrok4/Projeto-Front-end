@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pagamento.css">
+    <script src="../scripts/pagamento.js" defer></script>
+    <title>Pagamento</title>
+</head>
+<body>
+    <body>
+
+  <div class="checkout-container">
+    <h2>💳 Pagamento Seguro</h2>
+
+    <div class="resumo" id="resumoPagamento">
+      <p><b>Itens:</b> <span id="qtdItens">0</span> produtos</p>
+      <p><b>Total:</b> R$ <span id="totalCompra">0,00</span></p>
+    </div>
+  
+    <!-- Escolha do método -->
+    <div class="metodos">
+      <div class="metodo active" data-metodo="cartao">💳 Cartão</div>
+      <div class="metodo" data-metodo="pix">⚡ Pix</div>
+      <div class="metodo" data-metodo="boleto">📄 Boleto</div>
+    </div>
+
+    <!-- Formulário -->
+    <form id="formPagamento">
+      <div id="formCartao">
+        <div class="form-group">
+          <label>Nome no Cartão</label>
+          <input type="text" required>
+        </div>
+        <div class="form-group">
+          <label>Número do Cartão</label>
+          <input type="text" maxlength="16" placeholder="0000 0000 0000 0000" required>
+        </div>
+        <div class="form-group">
+          <label>Validade</label>
+          <input type="text" maxlength="5" placeholder="MM/AA" required>
+        </div>
+        <div class="form-group">
+          <label>CVV</label>
+          <input type="password" maxlength="3" required>
+        </div>
+      </div>
+
+      <div id="formPix" style="display:none; text-align:center;">
+        <p>⚡ Escaneie o QR Code para pagar via Pix:</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=PagamentoSimuladoPix" alt="QR Code Pix">
+      </div>
+
+      <div id="formBoleto" style="display:none; text-align:center;">
+        <p>📄 Clique no botão abaixo para gerar seu boleto:</p>
+        <button type="button" class="btn-pagar" onclick="gerarBoleto()">Gerar Boleto</button>
+      </div>
+
+      <button type="submit" id="btnFinalizar" class="btn-pagar">Finalizar Pagamento</button>
+    </form>
+
+    <div class="success-message" id="successMessage">
+      ✅ Pagamento realizado com sucesso!
+    </div>
+  </div>
+
+</body>
+</html>
