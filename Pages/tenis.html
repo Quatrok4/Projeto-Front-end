@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brito´s - Tênis</title>
+  <link rel="stylesheet" href="../css/tenis.css">
 </head>
 <body>
-    tenis
+  <header>
+    <h1>Brito´s</h1>
+    <nav>
+      <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../produtos.html" class="active">Produtos</a></li>
+          <li><a href="../login.html">Login</a></li>
+          <li><a href="../cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+    <button id="toggleCarrinho" class="btn-carrinho">
+      🛒 Carrinho (<span id="quantidade">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section class="produtos">
+      <h2>Tênis</h2>
+      <div class="grid">
+        <div class="produto">
+          <img src="../assets/tenis/tenisesportivoproduto1.jpeg" alt="Tênis Esportivo" />
+          <h3>Tênis Esportivo</h3>
+          <p class="preco">R$ 199,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/tenis/teniscasualproduto2.jpeg" alt="Tênis Casual" />
+          <h3>Tênis Casual</h3>
+          <p class="preco">R$ 159,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/tenis/tenisdecorridaproduto3.jpeg" alt="Tênis de Corrida" />
+          <h3>Tênis de Corrida</h3>
+          <p class="preco">R$ 229,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/tenis/tenisconfortproduto4.jpeg" alt="Tênis Confort" />
+          <h3>Tênis Confort</h3>
+          <p class="preco">R$ 179,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/tenis/tenisstreetproduto5.jpeg" alt="Tênis Street" />
+          <h3>Tênis Street</h3>
+          <p class="preco">R$ 189,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/tenis/tenismodernoproduto6.jpeg" alt="Tênis Moderno" />
+          <h3>Tênis Moderno</h3>
+          <p class="preco">R$ 209,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/tenis/tenisfashionproduto7.jpeg" alt="Tênis Fashion" />
+          <h3>Tênis Fashion</h3>
+          <p class="preco">R$ 219,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/tenis/tenisclassicoproduto8.jpeg" alt="Tênis Clássico" />
+          <h3>Tênis Clássico</h3>
+          <p class="preco">R$ 179,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Carrinho lateral -->
+  <aside id="carrinho" class="carrinho">
+    <h2>Meu Carrinho</h2>
+    <ul id="listaCarrinho"></ul>
+    <div class="total">
+      <strong>Total: R$ <span id="total">0.00</span></strong>
+    </div>
+   <div class="botoes-carrinho">
+        <button id="fecharCarrinho" class="btn-fechar">Minimizar</button>
+        <a href="../Pages/pagamento.html" class="btn-pagar" id="pagarCarrinho">Fazer Pagamento</a>
+      </div> 
+    <!-- Modal de alerta -->
+    <div id="alertaCarrinho" class="modal">
+      <div class="modal-content">
+        <p>🛒 Seu carrinho está vazio!</p>
+        <button id="fecharAlerta">Fechar</button>
+      </div>
+    </div>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Brito´s - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../scripts/carrinho.js"></script>
 </body>
 </html>

@@ -26,7 +26,7 @@
     <div class="banner-content">
       <h2>Nova Coleção 2025</h2>
       <p>Estilo, conforto e qualidade para o seu dia a dia</p>
-      <button onclick="verProdutos()">Ver Produtos</button>
+      <button onclick="window.location.href='produtos.html'">Ver Produtos</button>
     </div>
   </section>
 
@@ -38,19 +38,19 @@
         <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=500&q=80" alt="Produto 1">
         <h3>Camisa Casual</h3>
         <p>R$ 89,90</p>
-        <button>Comprar</button>
+        <button onclick="adicionarAoCarrinho('Camisa Casual', 89.90)">Comprar</button>
       </div>
       <div class="card">
         <img src="./assets/jaqueta.jpg" alt="Produto 2">
         <h3>Jaqueta Jeans</h3>
         <p>R$ 199,90</p>
-        <button>Comprar</button>
+        <button onclick="adicionarAoCarrinho('Camisa Casual', 199.90)">Comprar</button>
       </div>
       <div class="card">
         <img src="./assets/vestidofloral.png" alt="Vestido Floral">
         <h3>Vestido Floral</h3>
         <p>R$ 149,90</p>
-        <button>Comprar</button>
+        <button onclick="adicionarAoCarrinho('Camisa Casual', 149.90)">Comprar</button>
       </div>
     </div>
   </section>
@@ -60,6 +60,6 @@
     <p>&copy; 2025 Brito's - Todos os direitos reservados</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="./scripts/javascript.js"></script>
 </body>
 </html>

@@ -112,3 +112,4 @@ function atualizarCarrinho() {
   // 🔹 Salva sempre usando a mesma chave
   localStorage.setItem("carrinhoTotal", total.toFixed(2));
 }
+

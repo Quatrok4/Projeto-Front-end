@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brito´s - Vestidos</title>
+  <link rel="stylesheet" href="../css/vestido.css">
 </head>
 <body>
-    vestido
+  <header>
+    <h1>Brito´s</h1>
+    <nav>
+      <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../produtos.html" class="active">Produtos</a></li>
+          <li><a href="../login.html">Login</a></li>
+          <li><a href="../cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+    <button id="toggleCarrinho" class="btn-carrinho">
+      🛒 Carrinho (<span id="quantidade">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section class="produtos">
+      <h2>Vestidos</h2>
+      <div class="grid">
+        <div class="produto">
+          <img src="../assets/vestidos/vestidofloralproduto1.jpeg" alt="Vestido Floral" />
+          <h3>Vestido Floral</h3>
+          <p class="preco">R$ 149,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/vestidos/vestidolongoproduto2.jpeg" alt="Vestido Longo Elegante" />
+          <h3>Vestido Longo Elegante</h3>
+          <p class="preco">R$ 179,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/vestidos/vestidocurtoproduto3.jpeg" alt="Vestido Curto Casual" />
+          <h3>Vestido Curto Casual</h3>
+          <p class="preco">R$ 129,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/vestidos/vestidodefestaproduto4.jpeg" alt="Vestido de Festa" />
+          <h3>Vestido de Festa</h3>
+          <p class="preco">R$ 219,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/vestidos/vestidojeansproduto5.jpeg" alt="Vestido Jeans" />
+          <h3>Vestido Jeans</h3>
+          <p class="preco">R$ 139,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/vestidos/vestidodeveraoproduto6.jpeg" alt="Vestido de Verão" />
+          <h3>Vestido de Verão</h3>
+          <p class="preco">R$ 119,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/vestidos/vestidolistradoproduto7.jpeg" alt="Vestido Midi Listrado" />
+          <h3>Vestido Midi Listrado</h3>
+          <p class="preco">R$ 159,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="produto">
+          <img src="../assets/vestidos/vestidoderendaproduto8.jpeg" alt="Vestido de Renda" />
+          <h3>Vestido de Renda</h3>
+          <p class="preco">R$ 189,90</p>
+          <button class="add-carrinho">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Carrinho lateral -->
+  <aside id="carrinho" class="carrinho">
+    <h2>Meu Carrinho</h2>
+    <ul id="listaCarrinho"></ul>
+    <div class="total">
+      <strong>Total: R$ <span id="total">0.00</span></strong>
+    </div>
+    <div class="botoes-carrinho">
+        <button id="fecharCarrinho" class="btn-fechar">Minimizar</button>
+        <a href="../Pages/pagamento.html" class="btn-pagar" id="pagarCarrinho">Fazer Pagamento</a>
+      </div> 
+    <!-- Modal de alerta -->
+    <div id="alertaCarrinho" class="modal">
+      <div class="modal-content">
+        <p>🛒 Seu carrinho está vazio!</p>
+        <button id="fecharAlerta">Fechar</button>
+      </div>
+    </div>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Brito´s - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../scripts/carrinho.js"></script>
 </body>
 </html>
