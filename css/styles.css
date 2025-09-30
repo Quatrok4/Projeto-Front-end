@@ -13,34 +13,65 @@ body {
 
 /* === NAVBAR & HEADER === */
 header {
-  background-color: #222;
+  background: #181818;
   color: white;
-  padding: 15px 40px;
+  padding: 5px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
 
 header h1 {
-  color: #d4af37;
+  color: #ffb300;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin: 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
 }
 
+nav ul li a.active,
 nav ul li a:hover {
-  color: #ff6f61;
+  background: #ffb300;
+  color: #181818;
 }
+
+.btn-carrinho {
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
+  color: #181818;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255,183,77,0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-carrinho:hover {
+  background: linear-gradient(90deg, #ff6f61 60%, #ffb300 100%);
+  color: #fff;
+}
+
 
 /* === BANNER === */
 .banner {
@@ -79,7 +110,7 @@ nav ul li a:hover {
 .banner button {
   padding: 12px 24px;
   font-size: 1rem;
-  background-color: #ff6f61;
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
   border: none;
   color: white;
   border-radius: 5px;
@@ -88,7 +119,9 @@ nav ul li a:hover {
 }
 
 .banner button:hover {
-  background-color: #e05a4e;
+ background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
+ transform: scale(1.05);
+ transition: 0.3s;
 }
 
 /* === PRODUTOS === */
@@ -141,14 +174,16 @@ nav ul li a:hover {
   margin-bottom: 15px;
   padding: 10px 15px;
   border: none;
-  background-color: #ff6f61;
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .card button:hover {
-  background-color: #e05a4e;
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 /* === FORMULÁRIOS === */
@@ -215,9 +250,14 @@ nav ul li a:hover {
 
 /* === RODAPÉ === */
 footer {
-  background-color: #222;
-  color: white;
+  background: #181818;
+  color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 22px;
   margin-top: 40px;
+  font-size: 1.08rem;
+  letter-spacing: 1px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
 }

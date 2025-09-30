@@ -134,30 +134,7 @@ function getUsuarios() {
   return usuarios ? JSON.parse(usuarios) : [];
 }
 
-// Login
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-  const email = inputEmail.value.trim();
-  const senha = inputSenha.value;
 
-  const usuarios = getUsuarios();
-  const usuario = usuarios.find(u => u.email === email);
-
-  if (!usuario) {
-    alert("Usuário não encontrado!");
-    return;
-  }
-
-  if (usuario.senha !== senha) {
-    alert("Senha incorreta!");
-    return;
-  }
-
-  // Login bem-sucedido
-  alert(`Bem-vindo(a), ${usuario.nome}!`);
-  // Aqui você pode redirecionar para a página inicial
-  window.location.href = "index.html";
-});
 
 const modalSenha = document.getElementById("modalSenha");
 const mensagemSenha = document.getElementById("mensagemSenha");
