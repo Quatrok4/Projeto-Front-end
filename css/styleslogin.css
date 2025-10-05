@@ -110,3 +110,44 @@ header h1 {
   cursor: pointer;
 }
 
+
+@media (max-width: 600px) {
+  .form-box {
+    padding: 3px;
+    max-width: 80vw;
+  }
+
+  .form-box input {
+    width: 60vw;
+    max-width: 95%;
+    font-size: 1rem;
+  }
+
+  .form-box button {
+    padding: 5px;
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  .modal-content-senha {
+    padding: 18px 8px;
+    max-width: 95vw;
+    width: 98vw;
+  }
+}
+
+@media (max-width: 400px) {
+  header, footer {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .form-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .modal-content-senha p {
+    font-size: 1rem;
+  }
+}
+

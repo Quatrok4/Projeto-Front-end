@@ -63,3 +63,45 @@ header h1 {
   transform: scale(1.05);
   transition-duration: 0.7s;
 }
+
+@media (max-width: 500px) {
+  .form-box {
+    padding: 18px;
+    max-width: 80vw;
+  }
+  .form-box input {
+    width: 70vw;
+    max-width: 95%;
+    font-size: 1rem;
+  }
+  .form-box button {
+    width: 50%;
+    font-size: 1rem;
+  }
+  header, footer {
+    padding: 10px 5px;
+    font-size: 1rem;
+  }
+}
+
+.form-box input:focus, .form-box button:focus {
+  outline: 2px solid #ffc711;
+  outline-offset: 2px;
+}
+
+.form-box input {
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-box input:focus {
+  border: 1.5px solid #ffc711;
+  box-shadow: 0 0 4px #ffc71133;
+}
+
+.form-box {
+  transition: box-shadow 0.3s;
+}
+
+.form-box:hover {
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.15);
+}
