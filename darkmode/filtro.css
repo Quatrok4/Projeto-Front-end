@@ -1,0 +1,160 @@
+/* =======================
+   Modo Dark - Página de Camisas
+======================= */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Header, Footer e Seções */
+body.dark-mode main,
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode section {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Produtos */
+body.dark-mode .produtos {
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .produtos h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Cards de produto */
+body.dark-mode .produto {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.dark-mode .produto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .produto h3,
+body.dark-mode .produto p {
+  color: #f0f0f0;
+}
+
+/* Botão de adicionar ao carrinho */
+body.dark-mode .add-carrinho {
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
+  color: rgb(11, 11, 11);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px 10px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+body.dark-mode .add-carrinho:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Carrinho lateral */
+body.dark-mode .carrinho {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .carrinho h2 {
+  color: #fff;
+}
+
+body.dark-mode .modal-content {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Rodapé */
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Botão fixo do modo dark */
+#dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 12px 16px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffb300;
+  color: #181818;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+/* Transições suaves */
+body, header, footer, section, .produto, .carrinho, .modal-content {
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Cards com borda branca translúcida no modo dark */
+body.dark-mode main .produto {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  transition: border 0.3s, background-color 0.3s, color 0.3s;
+  background-color: #1e1e1e; /* mantém o fundo escuro do card */
+  color: #f0f0f0; /* garante que o texto fique visível */
+}
+
+/* =======================
+   Carrinho Dark Mode
+======================= */
+body.dark-mode #carrinho {
+  background-color: #1e1e1e; /* fundo escuro */
+  color: #f0f0f0; /* cor padrão do texto */
+}
+
+body.dark-mode #carrinho li,
+body.dark-mode #carrinho strong,
+body.dark-mode #carrinho span {
+  color: #0b0b0b; /* força cor clara para todos os valores */
+}
+
+/* Botões dentro do carrinho */
+body.dark-mode #carrinho button {
+  background-color: #ffb300;
+  color: #ffb300;
+  border: none;
+}
+
+body.dark-mode #carrinho button:hover {
+  background-color: #ff6f61;
+  color: #fff;
+}
+

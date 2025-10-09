@@ -1,0 +1,174 @@
+/* =======================
+   Modo Dark - Página de Pagamento
+======================= */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+body.dark-mode .checkout-container {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+body.dark-mode .checkout-container h2 {
+  color: #ffb300;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Resumo da compra */
+body.dark-mode .resumo {
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .resumo p {
+  color: #f0f0f0;
+}
+
+/* Métodos de pagamento */
+body.dark-mode .metodos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+body.dark-mode .metodo {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #2a2a2a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f0f0f0;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+body.dark-mode .metodo:hover {
+  transform: scale(1.05);
+  background-color: #3a3a3a;
+}
+
+body.dark-mode .metodo.active {
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Formulário */
+body.dark-mode form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+body.dark-mode .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+body.dark-mode label {
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+body.dark-mode input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark-mode input::placeholder {
+  color: #999;
+}
+
+/* Botões */
+body.dark-mode .btn-pagar {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+body.dark-mode .btn-pagar:hover {
+  transform: scale(1.05);
+}
+
+/* QR Code e boleto */
+body.dark-mode #formPix img {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+body.dark-mode #formBoleto button {
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+body.dark-mode #formBoleto button:hover {
+  transform: scale(1.05);
+}
+
+/* Mensagem de sucesso */
+body.dark-mode .success-message {
+  background-color: #2a2a2a;
+  color: #0f0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+
+/* Botão fixo do modo dark */
+#dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 12px 16px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffb300;
+  color: #181818;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+/* Transições suaves */
+body, .checkout-container, .metodo, input, button, .success-message {
+  transition: background-color 0.3s, color 0.3s;
+}

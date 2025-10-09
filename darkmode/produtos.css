@@ -1,0 +1,259 @@
+/* === Modo Dark - produtos.html === */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode main,
+body.dark-mode aside,
+body.dark-mode section {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode nav ul li a {
+  color: #f0f0f0;
+}
+
+body.dark-mode nav ul li a.active,
+body.dark-mode nav ul li a:hover {
+  background: #ffb300;
+  color: #181818;
+}
+
+body.dark-mode .banner,
+body.dark-mode .filtros,
+body.dark-mode .grid,
+body.dark-mode .produto,
+body.dark-mode .carrinho,
+body.dark-mode .modal-content {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .produto button,
+body.dark-mode .btn-carrinho,
+body.dark-mode .botoes-carrinho button,
+body.dark-mode .botoes-carrinho a {
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
+  color: #181818;
+}
+
+body.dark-mode .produto button:hover,
+body.dark-mode .btn-carrinho:hover,
+body.dark-mode .botoes-carrinho button:hover,
+body.dark-mode .botoes-carrinho a:hover {
+  background: linear-gradient(90deg, #ff6f61 60%, #ffb300 100%);
+  color: #fff;
+}
+
+/* Botão Dark Mode */
+#dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 12px 16px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffb300;
+  color: #181818;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+#dark-mode-toggle:hover {
+  transform: scale(1.1);
+}
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+/* Transições suaves */
+body, header, footer, main, aside, section, .produto, .carrinho, .modal-content {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Corrige textos escuros que somem no modo dark */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode a,
+body.dark-mode strong {
+  color: #f0f0f0 !important;
+}
+
+/* Garante boa visibilidade nos preços e textos dentro de cards */
+body.dark-mode .produto h3,
+body.dark-mode .produto p,
+body.dark-mode .preco {
+  color: #f0f0f0 !important;
+}
+
+/* Caso existam textos dentro de botões */
+body.dark-mode button,
+body.dark-mode .btn-carrinho,
+body.dark-mode .botoes-carrinho button,
+body.dark-mode .botoes-carrinho a {
+  color: #181818 !important; /* texto escuro sobre o fundo amarelo */
+}
+
+/* === MODO DARK GLOBAL === */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Textos principais e títulos */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode a,
+body.dark-mode strong {
+  color: #f0f0f0 !important;
+}
+
+/* === CARDS / PRODUTOS === */
+body.dark-mode .produto,
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+
+body.dark-mode .produto:hover,
+body.dark-mode .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.15);
+}
+
+/* === CABEÇALHO E RODAPÉ === */
+body.dark-mode header {
+  background-color: #181818;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode footer {
+  background-color: #181818;
+  color: #f0f0f0;
+}
+
+/* === BOTÕES === */
+body.dark-mode button,
+body.dark-mode .btn-carrinho,
+body.dark-mode .botoes-carrinho button,
+body.dark-mode .botoes-carrinho a {
+  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
+  color: #181818 !important;
+  border: none;
+  transition: 0.3s;
+}
+
+body.dark-mode button:hover,
+body.dark-mode .btn-carrinho:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff6f61 60%, #ffb300 100%);
+}
+
+/* === LINKS DE NAVEGAÇÃO === */
+body.dark-mode nav ul li a {
+  color: #f0f0f0;
+}
+
+body.dark-mode nav ul li a:hover {
+  background: #ffb300;
+  color: #181818;
+}
+
+/* === CAIXAS / CONTAINERS === */
+body.dark-mode .form-box,
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* === CAMPOS DE TEXTO === */
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+ 
+
+/* === FILTROS === */
+body.dark-mode .filtros {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* borda branca translúcida */
+  color: #f0f0f0;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+body.dark-mode .filtros h2,
+body.dark-mode .filtro h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .filtro {
+  margin-top: 10px;
+}
+
+body.dark-mode .filtro button {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* mesma borda translúcida */
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+body.dark-mode .filtro button:hover {
+  background-color: #3a3a3a;
+  transform: scale(1.03);
+}
+
+/* =======================
+   Carrinho Dark Mode
+======================= */
+body.dark-mode #carrinho {
+  background-color: #1e1e1e; /* fundo escuro */
+  color: #f0f0f0; /* cor padrão do texto */
+}
+
+body.dark-mode #carrinho li,
+body.dark-mode #carrinho strong,
+body.dark-mode #carrinho span {
+  color: #0b0b0b; /* força cor clara para todos os valores */
+}
+
+/* Botões dentro do carrinho */
+body.dark-mode #carrinho button {
+  background-color: #ffb300;
+  color: #181818;
+  border: none;
+}
+
+body.dark-mode #carrinho button:hover {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
