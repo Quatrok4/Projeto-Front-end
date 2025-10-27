@@ -9,6 +9,41 @@
 
 </head>
 <body>
+
+
+  <!-- Ícone Flutuante -->
+  <div id="chat-icon">
+    💬
+  </div>
+
+  <!-- Janela do Chat -->
+  <div class="chat-container" id="chat-container">
+    <div class="chat-header">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712105.png" alt="Atendente" class="avatar">
+      <div>
+        <h2>Assistente da Loja</h2>
+        <p>Online agora 💚</p>
+      </div>
+      <button id="close-chat">✖</button>
+    </div>
+
+    <div class="chat-box" id="chat-box">
+      <div class="bot-message">👗 Olá! Sou a assistente virtual da loja. Como posso te ajudar hoje?</div>
+    </div>
+
+    <div class="question-box">
+      <select id="question-select">
+        <option value="">Selecione uma pergunta...</option>
+        <option value="frete">Quais são as opções de frete?</option>
+        <option value="tamanhos">Vocês trabalham com quais tamanhos?</option>
+        <option value="troca">Como funciona a troca de produtos?</option>
+        <option value="pagamento">Quais formas de pagamento aceitam?</option>
+        <option value="promocoes">Tem promoções ativas?</option>
+      </select>
+      <button id="send-btn">Enviar</button>
+    </div>
+  </div>
+  
   <!-- HEADER -->
   <header>
     <h1>Brito's</h1>
