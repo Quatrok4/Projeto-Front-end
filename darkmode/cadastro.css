@@ -9,9 +9,12 @@ body.dark-mode {
 /* Header e Footer */
 body.dark-mode header,
 body.dark-mode footer {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #3c3c3c !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode footer p {
+  color: #000000;
 }
 
 body.dark-mode footer {
@@ -41,9 +44,8 @@ body.dark-mode .form-box input::placeholder {
 }
 
 body.dark-mode .form-box button {
-  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, #064e3b 0%, #16a34a 100%);
+color: #000000;
   cursor: pointer;
   transition: transform 0.2s;
 }

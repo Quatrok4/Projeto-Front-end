@@ -510,3 +510,9 @@ button, .btn-carrinho, #pagarCarrinho, .btn-fechar {
   }
 }
 
+footer {
+  text-align: center; /* centraliza o texto horizontalmente */
+  padding: 20px 0;    /* adiciona espaço acima e abaixo */
+  background-color: #000000; /* exemplo de cor de fundo */
+  color: #fff;        /* cor do texto */
+}

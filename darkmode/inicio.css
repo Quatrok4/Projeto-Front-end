@@ -9,10 +9,22 @@ body.dark-mode {
 /* Header, Footer e Seções */
 body.dark-mode header,
 body.dark-mode footer,
-body.dark-mode section {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+body.dark-mode footer#contato,
+body.dark-mode .footer-content {
+  background-color: #3c3c3c !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .header-texto a {
+  color: #000000;
+}
+
+
+
+/* Informações de contato */
+body.dark-mode .footer-content p,
+body.dark-mode .contato-info p {
+  color: #000000;
 }
 
 /* Banner */
@@ -31,13 +43,17 @@ body.dark-mode .banner::after {
 body.dark-mode h2,
 body.dark-mode .banner-content h2,
 body.dark-mode .banner-content p {
-  color: #fff;
+  color: #000000;
+}
+
+body.dark-mode .produtos h2 {
+  color:  #ffb300
 }
 
 body.dark-mode .banner button {
-  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+background: linear-gradient(90deg, #064e3b 0%, #16a34a 100%);
+color: #000000;
+
 }
 
 /* Cards dos produtos */
@@ -50,30 +66,18 @@ body.dark-mode .card {
 
 body.dark-mode .card h3,
 body.dark-mode .card p {
-  color: #f0f0f0;
+  color: #ffffff;
 }
 
 body.dark-mode .card button {
-  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+background: linear-gradient(90deg, #064e3b 0%, #16a34a 100%);
+color: #000000;
 }
 
 body.dark-mode .card button:hover {
   transform: scale(1.05);
 }
 
-/* Rodapé */
-body.dark-mode footer {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Informações de contato */
-body.dark-mode .contato-info p {
-  color: #ccc;
-}
 
 /* === Botão fixo do modo dark === */
 #dark-mode-toggle {

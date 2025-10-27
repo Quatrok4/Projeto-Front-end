@@ -6,24 +6,23 @@ body.dark-mode {
   color: #f0f0f0;
 }
 
-/* Header e Footer */
+/* Header, Footer */
 body.dark-mode header,
-body.dark-mode footer {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+body.dark-mode footer
+ {
+  background-color: #3c3c3c !important;
+  color: #f0f0f0 !important;
 }
 
-body.dark-mode footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+body.dark-mode .texto-footer p {
+  color: #000000;
 }
 
 /* Formulário de login */
 body.dark-mode .form-box {
   background-color: #1e1e1e;
   color: #f0f0f0;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  
 }
 
 body.dark-mode .form-box h2 {
@@ -33,7 +32,7 @@ body.dark-mode .form-box h2 {
 body.dark-mode .form-box input {
   background-color: #2a2a2a;
   color: #f0f0f0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+
 }
 
 body.dark-mode .form-box input::placeholder {
@@ -41,9 +40,8 @@ body.dark-mode .form-box input::placeholder {
 }
 
 body.dark-mode .form-box button {
-  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(90deg, #064e3b 0%, #16a34a 100%);
+color: #000000;
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -56,7 +54,6 @@ body.dark-mode .form-box button:hover {
 body.dark-mode .btn-esqueci {
   background-color: #333;
   color: #f0f0f0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 body.dark-mode .btn-esqueci:hover {

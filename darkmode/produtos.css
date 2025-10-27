@@ -4,14 +4,35 @@ body.dark-mode {
   color: #f0f0f0;
 }
 
+/* Header, Footer e Seções */
 body.dark-mode header,
 body.dark-mode footer,
+body.dark-mode footer#contato,
+body.dark-mode .footer-content {
+  background-color: #3c3c3c !important;
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode header a {
+  color: #000000 !important;
+}
+body.dark-mode .produtos h2 {
+  color:  #ffb300
+}
+/* Informações de contato */
+body.dark-mode .footer-content p,
+body.dark-mode .contato-info p {
+  color: #000000 !important ;
+}
+
 body.dark-mode main,
 body.dark-mode aside,
 body.dark-mode section {
   background-color: #1e1e1e;
   color: #f0f0f0;
 }
+
+
 
 body.dark-mode nav ul li a {
   color: #f0f0f0;
@@ -37,17 +58,10 @@ body.dark-mode .produto button,
 body.dark-mode .btn-carrinho,
 body.dark-mode .botoes-carrinho button,
 body.dark-mode .botoes-carrinho a {
-  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
-  color: #181818;
+ background: linear-gradient(90deg, #064e3b 0%, #16a34a 100%);
+color: #000000;
 }
 
-body.dark-mode .produto button:hover,
-body.dark-mode .btn-carrinho:hover,
-body.dark-mode .botoes-carrinho button:hover,
-body.dark-mode .botoes-carrinho a:hover {
-  background: linear-gradient(90deg, #ff6f61 60%, #ffb300 100%);
-  color: #fff;
-}
 
 /* Botão Dark Mode */
 #dark-mode-toggle {
@@ -81,16 +95,6 @@ body, header, footer, main, aside, section, .produto, .carrinho, .modal-content 
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Corrige textos escuros que somem no modo dark */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode p,
-body.dark-mode span,
-body.dark-mode a,
-body.dark-mode strong {
-  color: #f0f0f0 !important;
-}
 
 /* Garante boa visibilidade nos preços e textos dentro de cards */
 body.dark-mode .produto h3,
@@ -113,16 +117,6 @@ body.dark-mode {
   color: #f0f0f0;
 }
 
-/* Textos principais e títulos */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode p,
-body.dark-mode span,
-body.dark-mode a,
-body.dark-mode strong {
-  color: #f0f0f0 !important;
-}
 
 /* === CARDS / PRODUTOS === */
 body.dark-mode .produto,
@@ -139,30 +133,23 @@ body.dark-mode .card:hover {
   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.15);
 }
 
-/* === CABEÇALHO E RODAPÉ === */
-body.dark-mode header {
-  background-color: #181818;
-  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
-}
-
-body.dark-mode footer {
-  background-color: #181818;
-  color: #f0f0f0;
-}
 
 /* === BOTÕES === */
 body.dark-mode button,
 body.dark-mode .btn-carrinho,
 body.dark-mode .botoes-carrinho button,
 body.dark-mode .botoes-carrinho a {
-  background: linear-gradient(90deg, #ffb300 60%, #ff6f61 100%);
-  color: #181818 !important;
+  background: linear-gradient(90deg, #064e3b 0%, #16a34a 100%);
+color: #000000;
   border: none;
   transition: 0.3s;
 }
 
+body.dark-mode nav ul li a:hover,
 body.dark-mode button:hover,
-body.dark-mode .btn-carrinho:hover {
+body.dark-mode .btn-carrinho:hover,
+body.dark-mode #pagarCarrinho:hover
+ {
   transform: scale(1.05);
   background: linear-gradient(90deg, #ff6f61 60%, #ffb300 100%);
 }
@@ -172,10 +159,7 @@ body.dark-mode nav ul li a {
   color: #f0f0f0;
 }
 
-body.dark-mode nav ul li a:hover {
-  background: #ffb300;
-  color: #181818;
-}
+
 
 /* === CAIXAS / CONTAINERS === */
 body.dark-mode .form-box,
@@ -246,14 +230,10 @@ body.dark-mode #carrinho span {
 }
 
 /* Botões dentro do carrinho */
-body.dark-mode #carrinho button {
-  background-color: #ffb300;
-  color: #181818;
+body.dark-mode #pagarCarrinho {
+  background: linear-gradient(90deg, #064e3b 0%, #16a34a 100%);
+color: #000000;
   border: none;
 }
 
-body.dark-mode #carrinho button:hover {
-  background-color: #ff6f61;
-  color: #fff;
-}
 
