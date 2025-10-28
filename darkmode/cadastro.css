@@ -81,21 +81,26 @@ body.dark-mode a {
   color: #ffb300;
 }
 
-/* Botão fixo do modo dark */
+/* === Botão fixo do modo dark === */
 #dark-mode-toggle {
   position: fixed;
-  bottom: 20px;
+  bottom: 15px;
   right: 20px;
   z-index: 1000;
   padding: 12px 16px;
-  font-size: 1.3rem;
+  font-size: 28px;
+  width: 60px;                 /* Largura do botão → define o tamanho principal */
+  height: 60px;               /* Altura do botão → define o tamanho principal */
+  display: flex;               /* Centraliza o conteúdo internamente */
+  align-items: center;         /* Centraliza verticalmente */
+  justify-content: center;     /* Centraliza horizontalmente */
   border: none;
   border-radius: 50%;
   cursor: pointer;
   background-color: #ffb300;
   color: #181818;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 

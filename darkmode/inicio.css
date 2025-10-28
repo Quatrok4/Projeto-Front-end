@@ -82,11 +82,16 @@ body.dark-mode .card button:hover {
 /* === Botão fixo do modo dark === */
 #dark-mode-toggle {
   position: fixed;
-  bottom: 20px;
+  bottom: 15px;
   right: 20px;
   z-index: 1000;
   padding: 12px 16px;
-  font-size: 1.3rem;
+  font-size: 28px;
+  width: 60px;                 /* Largura do botão → define o tamanho principal */
+  height: 60px;               /* Altura do botão → define o tamanho principal */
+  display: flex;               /* Centraliza o conteúdo internamente */
+  align-items: center;         /* Centraliza verticalmente */
+  justify-content: center;     /* Centraliza horizontalmente */
   border: none;
   border-radius: 50%;
   cursor: pointer;
