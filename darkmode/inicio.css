@@ -115,3 +115,19 @@ body.dark-mode #dark-mode-toggle {
 body, header, footer, section, .card, .banner-content, .form-box {
   transition: background-color 0.3s, color 0.3s;
 }
+
+.chat-container {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 350px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: none; /* escondido inicialmente */
+  flex-direction: column;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+  color: #000000;
+}

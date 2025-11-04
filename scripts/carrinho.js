@@ -113,3 +113,5 @@ function atualizarCarrinho() {
   localStorage.setItem("carrinhoTotal", total.toFixed(2));
 }
 
+
+
