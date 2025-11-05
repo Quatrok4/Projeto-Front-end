@@ -43,7 +43,7 @@ body.dark-mode .banner::after {
 body.dark-mode h2,
 body.dark-mode .banner-content h2,
 body.dark-mode .banner-content p {
-  color: #000000;
+  color: #ffffff;
 }
 
 body.dark-mode .produtos h2 {
