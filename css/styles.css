@@ -660,3 +660,38 @@ input, textarea {
 #send-btn:hover {
   background: #4338ca;
 }
+
+
+
+/* === RESPONSIVO PARA POPUP === */
+@media (max-width: 600px) {
+  .popup-content {
+    width: 90%; /* Ajusta a largura do popup em telas menores */
+    padding: 20px; /* Reduz o padding */
+  }
+
+  .alert-box {
+    width: 80%; /* Ajusta a largura do alerta em telas menores */
+    padding: 20px; /* Reduz o padding */
+  }
+
+  .chat-container {
+    width: 90%; /* Ajusta a largura da janela de chat em telas menores */
+  }
+
+  .chat-header {
+    padding: 8px 10px; /* Reduz o padding do cabeçalho do chat */
+  }
+
+  .chat-box {
+    height: 250px; /* Ajusta a altura da caixa de mensagens */
+  }
+
+  .question-box {
+    padding: 8px; /* Reduz o padding do seletor e botão */
+  }
+
+  #send-btn {
+    padding: 6px 10px; /* Reduz o padding do botão de envio */
+  }
+}
