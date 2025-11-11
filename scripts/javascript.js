@@ -91,3 +91,55 @@ function removerDigitando() {
   const typing = document.getElementById("typing");
   if (typing) typing.remove();
 }
+
+
+
+// Seleciona os elementos
+// Seleciona os elementos
+const openPopupBtn = document.getElementById("openPopupBtn");
+const closePopupBtn = document.getElementById("closePopupBtn");
+const popupForm = document.getElementById("popupForm");
+
+// Elementos do alerta personalizado
+const customAlert = document.getElementById("customAlert");
+const alertMessage = document.getElementById("alertMessage");
+const alertOkBtn = document.getElementById("alertOkBtn");
+
+// Abre o popup
+openPopupBtn.addEventListener("click", () => {
+  popupForm.style.display = "flex";
+});
+
+// Fecha o popup
+closePopupBtn.addEventListener("click", () => {
+  popupForm.style.display = "none";
+});
+
+// Fecha clicando fora do conteúdo
+window.addEventListener("click", (event) => {
+  if (event.target === popupForm) {
+    popupForm.style.display = "none";
+  }
+});
+
+// Mostra o alerta personalizado
+function showAlert(message) {
+  alertMessage.textContent = message;
+  customAlert.style.display = "flex";
+}
+
+// Fecha o alerta
+alertOkBtn.addEventListener("click", () => {
+  customAlert.style.display = "none";
+});
+
+// Simula envio do formulário
+document.getElementById("contactForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  popupForm.style.display = "none";
+  e.target.reset();
+
+  // Mostra alerta estilizado
+  showAlert("✅ Mensagem enviada com sucesso!");
+});

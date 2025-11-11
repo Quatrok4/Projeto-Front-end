@@ -97,6 +97,11 @@
     </div>
   </section>
 
+
+
+
+
+
   <!-- RODAPÉ -->
   <footer id="contato">
     <div class="footer-content">
@@ -108,6 +113,38 @@
         <p><strong><Endereço:>Endereço: Rua de Britos, 123 - Rio de Janeiro, RJ</strong></p>
       </div>
     </div>
+
+    <button id="openPopupBtn" class="open-btn">Entrar em Contato</button>
+
+<!-- Popup -->
+<div id="popupForm" class="popup">
+  <div class="popup-content">
+    <span id="closePopupBtn" class="close-btn">&times;</span>
+    <h2>Formulário de Contato</h2>
+    <form id="contactForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <button type="submit" class="send-btn">Enviar</button>
+    </form>
+  </div>
+</div>
+
+  <!-- Alerta personalizado -->
+  <div id="customAlert" class="custom-alert">
+    <div class="alert-box">
+      <div class="alert-icon">✅</div>
+      <p id="alertMessage">Mensagem enviada com sucesso!</p>
+      <button id="alertOkBtn" class="alert-btn">OK</button>
+    </div>
+  </div>
+  
   </footer>
 
   <script src="./scripts/javascript.js"></script>
