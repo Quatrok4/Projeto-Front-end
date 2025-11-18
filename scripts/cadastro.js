@@ -54,3 +54,58 @@ function mostrarErro(msg) {
   }
   erro.textContent = msg;
 }
+
+
+// Seleciona os inputs de senha
+const senhaInput = document.querySelector('input[placeholder="Senha"]');
+const confirmarSenhaInput = document.querySelector('input[placeholder="Confirmar senha"]');
+
+// Cria o box de validação visual
+const validatorBox = document.createElement('div');
+validatorBox.classList.add('validator-box');
+validatorBox.innerHTML = `
+  <p id="val-maiuscula">❌ Pelo menos 1 letra maiúscula</p>
+  <p id="val-minuscula">❌ Pelo menos 1 letra minúscula</p>
+  <p id="val-numero">❌ Pelo menos 1 número</p>
+  <p id="val-especial">❌ Pelo menos 1 caractere especial (!@#$%&*)</p>
+  <p id="val-tamanho">❌ Mínimo de 8 caracteres</p>
+`;
+senhaInput.insertAdjacentElement("afterend", validatorBox);
+
+// Função de validação
+function validarSenha() {
+  const senha = senhaInput.value;
+
+  // Verificações
+  const maiuscula = /[A-Z]/.test(senha);
+  const minuscula = /[a-z]/.test(senha);
+  const numero = /[0-9]/.test(senha);
+  const especial = /[!@#$%^&*(),.?":{}|<>]/.test(senha);
+  const tamanho = senha.length >= 8;
+
+  // Atualiza visual
+  document.getElementById("val-maiuscula").textContent = (maiuscula ? "✔" : "❌") + " Pelo menos 1 letra maiúscula";
+  document.getElementById("val-minuscula").textContent = (minuscula ? "✔" : "❌") + " Pelo menos 1 letra minúscula";
+  document.getElementById("val-numero").textContent = (numero ? "✔" : "❌") + " Pelo menos 1 número";
+  document.getElementById("val-especial").textContent = (especial ? "✔" : "❌") + " Pelo menos 1 caractere especial (!@#$%&*)";
+  document.getElementById("val-tamanho").textContent = (tamanho ? "✔" : "❌") + " Mínimo de 8 caracteres";
+
+  // Retorna se tudo passou
+  return maiuscula && minuscula && numero && especial && tamanho;
+}
+
+senhaInput.addEventListener("input", validarSenha);
+
+form.addEventListener("submit", function(e) {
+  if (!validarSenha()) {
+    e.preventDefault();
+    alert("A senha não atende todos os requisitos!");
+    return;
+  }
+
+  // Validação da confirmação de senha
+  if (senhaInput.value !== confirmarSenhaInput.value) {
+    e.preventDefault();
+    alert("As senhas não coincidem!");
+  }
+});

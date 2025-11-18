@@ -106,3 +106,22 @@ header h1 {
   box-shadow: 0 4px 16px rgba(212, 175, 55, 0.15);
 }
 
+
+.validator-box {
+  margin-top: 10px;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.validator-box p {
+  margin: 3px 0;
+}
+
+body.dark .validator-box {
+  background: #222;
+  color: #ffffff;
+}
+

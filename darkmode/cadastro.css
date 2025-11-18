@@ -117,3 +117,13 @@ body.dark-mode #dark-mode-toggle {
 body, header, footer, .form-box, .modal-content-senha, button, input {
   transition: background-color 0.3s, color 0.3s;
 }
+
+
+.validator-box {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+} 
